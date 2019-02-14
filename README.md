@@ -4,7 +4,7 @@
 
 ![](./images/review1.png)
 
-* 附上每日一道面试题的小程序二维码
+* 附上`每日一道面试题`的小程序二维码
 
 ![](./images/wxapp_review.png)
  
