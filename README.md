@@ -1,6 +1,6 @@
 ##### BucketList
 
-![](./images/1.PNG =200x400)
+![](./images/1.PNG){:height="100px" width="200px"}
 ![](./images/2.PNG)
 ![](./images/3.PNG)
 ![](./images/4.PNG)
