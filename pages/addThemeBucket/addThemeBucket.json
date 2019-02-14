@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "清单列表",
+  "usingComponents": {
+    "image-loader": "../../components/imgComponent",
+    "empty-layout": "../../libs/empty/empty"
+  }
+}

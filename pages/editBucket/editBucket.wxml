@@ -1,0 +1,69 @@
+<import src="../../wxu/toast/toast.wxml" />
+<template is="toast" data="{{ ...wxu.toast }}" />
+<view class="container">
+  <view class="event item">
+    <!-- <view class='title_img'> -->
+    <view class="title">清单名</view>
+    <!-- <image class='tag_img' src='../../images/detail/bucket_name.png'></image>
+    </view> -->
+
+    <view class="cont">
+      {{bucketListDetailData.bucketName}}
+    </view>
+  </view>
+  <view class="addr item">
+    <view class="title">地点</view>
+    <view class="cont" bindtap='getLocationTap'>
+      <!-- <picker mode="region" bindchange="bindRegionChange" disabled="{{!editStatus}}" value="{{region}}">
+        <view class="picker"> -->
+      {{address}}
+      <!-- {{region[0]}}-{{region[1]}}-{{region[2]}} -->
+      <!-- </view>
+      </picker> -->
+    </view>
+  </view>
+  <view class="time item">
+    <view class="title">幸福时刻</view>
+    <view class="cont">
+      <picker mode="date" value="{{time}}" disabled="{{!editStatus}}" bindchange="bindTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="photos item">
+    <view class='pics_top'>
+    <view class="title">时光印记</view>
+    <view class="weui-uploader__info">{{pics.length}}/9</view>
+    </view>
+    
+
+    <view class="page__bd">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__bd">
+                <view class="weui-uploader__files" id="uploaderFiles">
+                  <block wx:for="{{pics}}" wx:key="*this">
+                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                      <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                    </view>
+                  </block>
+                </view>
+                <view class="weui-uploader__input-box {{isShow?'true':'hideTrue'}}">
+                  <view class="weui-uploader__input" bindtap="doImgUpload"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="control">
+    <button class="save" bindtap="save" formType="submit">打卡</button>
+
+  </view>
+</view>

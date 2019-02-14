@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  /* padding: 24rpx; */
+  box-sizing: border-box;
+  background-color: peru;
+  position: relative;
+  
+}
+
+.guide-detail {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  font-size: 15px;
+  /* background-color: purple; */
+  float: left;
+}
+
+/* 子项 图片与文字一致 */
+
+.guide_detail_item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 210rpx;
+  padding: 20rpx 0;
+  margin: 20rpx;
+  /* background-color: cornflowerblue; */
+}
+
+.logo {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 0 auto;
+  border-radius: 5px;
+  /* border: 1rpx dashed #6C5AFB; */
+}
+
+/* 文字样式 */
+
+.guide_detail_item>view {
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+
+.add_btn {
+  width: 50px;
+  height: 50px;
+  bottom: 40rpx;
+  position: fixed;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: #6c5afb;
+  margin: 0px auto; /*在苹果手机上显示居中*/
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+.add_btn image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background-color: purple; */
+  margin-top: 5px;
+}
+
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 668;
+  flex:none;
+}
+
+.toastbg {
+  opacity: 0.2;
+  background-color: #3a3a3a;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+}
+
+.toast-title {
+  /* padding-left: 5%; */
+  background-color: #6c5afb;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+  text-align: center;
+  font-size: 15px;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white;
+  text-align: center;
+}
+
+.toast-input {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 14px;
+}
+
+.toast-button {
+  display: flex;
+  background-color: white;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.button2 {
+  width: 50%;
+}
+
+.button1 button {
+  width: 100%;
+  background-color: white;
+  color: palevioletred;
+  font-size: 14px;
+}
+
+button::after {
+  border: none;
+}
+
+.button2 button {
+  width: 100%;
+  background-color: white;
+  color: #6c5afb;
+  font-size: 14px;
+  /* border-left: 1px solid #3a3a3a; */
+}
+
+.picker {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.empty {
+  width: 100%;
+  height: 100px;
+  margin-top: 200px;
+  position: absolute;
+  /* background-color: coral; */
+}

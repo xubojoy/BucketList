@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else> -->
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+      <view class='userinfo-nickname'>{{nickName}}</view>
+    <!-- </block> -->
+  </view>
+  <view class='spcace_view'></view>
+  <view class="weui-cells_view">
+    <view wx:for='{{pagesArray}}' wx:for-item="page" wx:key='index' bindtap='weuicellTapAction' data-location='{{page.zh}}'>
+      <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../images/mine/{{page.imageName}}"></image>
+        </view>
+        <view class="weui-cell__bd">{{page.zh}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </view>
+  </view>
+  <view class='bottom_mark'>
+      <view class='bottom_mark_title'>小程序资源均来自网络</view>
+      <view class='bottom_mark_cont'>如有侵权请联系作者删除</view>
+    </view>
+</view>

@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="things">
+    <view class="card" catchtap="goThing" wx:for="{{bucketList}}" data-index="{{index}}" wx:key="card_id">
+      <button formType="submit" plain>
+        <!-- <view class="done" wx:if="{{item}}"><image src="../../images/success.svg" /></view> -->
+        <view class="inner">
+          {{item.themeName}}
+        </view>
+      </button>
+    </view>
+  </view>
+  <button class="add_btn" type="normal" bindtap='addBucketTheme'>
+    <image src='../../images/add.png'></image>
+  </button>
+
+  <view class='toast-box' hidden='{{hiddenmodalput}}'>
+    <view class='toastbg'></view>
+    <view class='showToast'>
+      <view class='toast-title'>
+        <text>添加主题</text>
+      </view>
+      <view class='toast-main'>
+        <view class='toast-input'>
+          <input placeholder='请输入主题' bindinput='addThingsInput'></input>
+        </view>
+      </view>
+      <view class='toast-button'>
+        <view class='button1'>
+          <button catchtap='cancel'>取消</button>
+        </view>
+        <view class='button2'>
+          <button catchtap='confirm'>确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

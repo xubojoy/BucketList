@@ -1,0 +1,19 @@
+<view class="container">
+<view class='logo'>
+<image class='logo_img' src='../../images/logo/logo_new.png'></image>
+</view>
+<view class='version_info'>v1.0.0</view>
+
+
+<view class='introduce_info'>
+<view class='introduce_info_title'>小程序简介</view>
+<view class='introduce_info_cont'>青春不待，时光难再续，每段记忆都会苍老，最美的年华里圆最美的梦，愿望还是要有的万一都实现了呢！-------愿望小清单帮你记录每个幸福瞬间！</view>
+<view class='introduce_info_author'>作者简介</view>
+<view class='introduce_info_author_cont'>喜欢折腾的码农一枚，目前全职iOS开发，空闲时间捣鼓后端和小程序，博客：<text style="color:#6c5afb;font-weight: bold;">http://xubojoy.cn/</text></view>
+<view class='introduce_info_logo'>关于LOGO</view>
+<view class='introduce_info_logo_cont'>特别感谢<text style="color:#6c5afb;font-weight: bold;">Aying</text>小朋友帮忙给设计的许愿树LOGO!</view>
+</view>
+
+<button class="button" open-type="feedback">反馈</button>
+
+</view>

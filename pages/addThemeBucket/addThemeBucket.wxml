@@ -1,0 +1,47 @@
+<import src="../../wxu/toast/toast.wxml" />
+<template is="toast" data="{{ ...wxu.toast }}" />
+<view id='container'>
+  <view class='empty' wx:if='{{guideList.length==0}}'>
+    <empty-layout emptyType="{{emptyType}}">
+    </empty-layout>
+  </view>
+  <view class='guide-detail' wx:else>
+    <view wx:for="{{guideList}}" wx:key="index">
+      <view class='guide_detail_item' data-index="{{index}}" bindtap='bucketListItemAction'>
+        <image class='logo' wx:if='{{item.finishedFlag==1}}' mode='aspectFill' src="{{item.bucketCoverUrl?item.bucketCoverUrl:'../../images/gray_placeholder.png'}}"></image>
+        <image class='logo' wx:else mode='aspectFill' src='../../images/gray_placeholder.png'></image>
+        <view>{{item.bucketName}}</view>
+      </view>
+    </view>
+  </view>
+
+  <button class="add_btn" type="normal" bindtap='addBucketTheme'>
+    <image src='../../images/add.png'></image>
+  </button>
+
+  <!-- <button class="add_btn" type="normal" bindtap='addBucketTheme' animation="{{animationData}}" catchtouchmove="buttonMove" catchtouchstart="buttonStart" catchtouchend="buttonEnd" style="top:{{buttonTop}}px;left:{{buttonLeft}}px;margin-bottom:20rpx;">
+  <image src='../../images/add.png'></image>
+  </button> -->
+
+  <view class='toast-box' hidden='{{hiddenmodalput}}' catchtouchmove="ture">
+    <view class='toastbg'></view>
+    <view class='showToast'>
+      <view class='toast-title'>
+        <text>添加清单</text>
+      </view>
+      <view class='toast-main'>
+        <view class='toast-input'>
+          <input placeholder='请输入清单' bindinput='addThingsInput'></input>
+        </view>
+      </view>
+      <view class='toast-button'>
+        <view class='button1'>
+          <button catchtap='cancel'>取消</button>
+        </view>
+        <view class='button2'>
+          <button catchtap='confirm'>确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

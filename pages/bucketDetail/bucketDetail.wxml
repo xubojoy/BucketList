@@ -1,0 +1,48 @@
+<!--pages/bucketDetail/bucketDetail.wxml-->
+<!-- <text>pages/bucketDetail/bucketDetail.wxml</text> -->
+<view class="container">
+  <!-- <image class='bg_img' src='{{bgImageUrl}}'></image> -->
+
+  <view class='day_tag'>
+
+    <view class='day_tag_info'>
+      <view class='day_tag_info_name'>愿望小清单</view>
+      <view class='day_tag_info_title'>日签</view>
+    </view>
+    <view class='day_tag_info_cont'>
+      <view class='day_tag_info_cont_en'>{{excerptWordEN}}</view>
+      <view class='day_tag_info_cont_ch'>{{excerptWordCH}}</view>
+    </view>
+
+  </view>
+
+  <view class='bucket_detail'>
+    <view class='userinfo_info'>
+      <image class='userinfo_avator' src="{{avatarUrl?avatarUrl:'../../images/user-unlogin.png'}}"></image>
+      <view class='userinfo_title'>
+        <view class='userinfo-nickname'>{{nickName}}</view>
+        <view class='userinfo-themename'>{{bucketName}}</view>
+      </view>
+    </view>
+    <view class='bucket_info'>
+      <view class='bucket_name_info'>
+        <image class='bucket_name_info_icon' src='../../images/detail/bucket_name_64.png'></image>
+        <view class='bucket_name_info_title'>打卡清单:</view>
+        <view class='bucket_name_info_cont'>{{bucketListName}}</view>
+      </view>
+      <view class='bucket_time_info'>
+        <image class='bucket_time_info_icon' src='../../images/detail/date_icon_64.png'></image>
+        <view class='bucket_time_info_title'>打卡日期:</view>
+        <view class='bucket_time_info_cont'>{{endTIme}}</view>
+      </view>
+      <view class='bucket_address_info'>
+        <image class='bucket_address_info_icon' src='../../images/detail/addr_64.png'></image>
+        <view class='bucket_address_info_title'>打卡地址:</view>
+        <view class='bucket_address_info_cont'>{{bucketListAddress}}</view>
+      </view>
+      <view class='qrcode_icon'>
+        <image src='../../images/detail/xubojoy.jpg'></image>
+      </view>
+    </view>
+  </view>
+</view>

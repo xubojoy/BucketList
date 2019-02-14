@@ -1,0 +1,261 @@
+/**index.wxss**/
+
+.container {
+  height: 100%;
+  /* background-color: cadetblue; */
+}
+
+.newAccount {
+  margin: 20% auto 10%;
+  height: 60%;
+  width: 90%;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed #6C5AFB;
+}
+
+.newAccount:active {
+  border: 1px dashed #6C5AFB;
+}
+
+.newAccount > .desc {
+  width: 70%;
+  margin: 25% auto;
+  color: #6C5AFB;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.newAccount > image {
+  height: 90rpx;
+  width: 90rpx;
+}
+
+.newAccount > .title {
+  color: #6C5AFB;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+}
+
+swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.newBucketList{
+  margin: 20% auto 10%;
+  height: 60%;
+  width: 90%;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed #6C5AFB;
+  /* background-color: chocolate; */
+}
+
+.bucket_image{
+  /* margin: 20% auto 10%; */
+  height: 80%;
+  width:100%;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  /* background-color: #6C5AFB; */
+  
+}
+
+.userinfo{
+  z-index: 99;
+  width: 150rpx;
+  height: 110rpx;
+  background-size: cover;
+  background-color: #f6f6f6;
+  position: fixed;
+  bottom: 100rpx;
+  right: 0;
+  border-top-left-radius: 75rpx;
+  border-bottom-left-radius: 75rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0 4rpx 8rpx 0 rgba(43,45,46,.16);
+}
+.avatar {
+  width: 90rpx;
+  height: 90rpx;
+  overflow: hidden;
+  background-size: cover;
+  border-radius:50%;
+  background-color: white;
+  box-shadow:0 0 12rpx 2rpx rgba(138, 15, 46, 0.16) inset;
+  border: 1rpx #6C5AFB dashed;
+  padding: 0;
+  margin-left: 10rpx;
+}
+.avatar image{
+  width: 90rpx;
+  height: 90rpx;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.progress_box {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: chocolate;
+}
+ 
+.progress_bg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: cadetblue;
+}
+ 
+.progress_canvas {
+  width: 80px;
+  height: 80px;
+}
+ 
+.progress_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: coral;
+}
+ 
+.progress_info {
+  font-size: 20rpx;
+  padding-left: 16rpx;
+  letter-spacing: 2rpx;
+  color: white;
+  text-align: center;
+}
+
+.theme_name{
+  height: 30px;
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  /* background-color: rgb(218, 178, 49); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: #6C5AFB;
+}
+
+.finish_Per{
+  height: 30px;
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  /* background-color: chocolate; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: #6C5AFB;
+}
+
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.toastbg {
+  opacity: 0.2;
+  background-color: #3a3a3a;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+}
+
+.toast-title {
+  /* padding-left: 5%; */
+  background-color: #6C5AFB;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+  text-align: center;
+  font-size: 15px;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white;
+  text-align: center;
+}
+
+.toast-input {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 14px;
+}
+
+.toast-button {
+  display: flex;
+  background-color: white;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.button2 {
+  width: 50%;
+}
+
+.button1 button {
+  width: 100%;
+  background-color: white;
+  color: palevioletred;
+  font-size: 14px;
+}
+
+button::after {
+  border: none;
+}
+
+.button2 button {
+  width: 100%;
+  background-color: white;
+  color: #6C5AFB;
+  font-size: 14px;
+  /* border-left: 1px solid #3a3a3a; */
+}
+
+.picker {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}

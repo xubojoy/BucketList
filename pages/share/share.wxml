@@ -1,0 +1,46 @@
+<view class="container">
+  <image class='share_bg_image' mode='aspectFill' src='{{shareBgImage}}'>
+    <view class='yulu_cont'>
+      <view class='yulu_cont_view'>
+        <view class='yulu_en'>{{excerptWordEN}}</view>
+        <view class='yulu_ch'>{{excerptWordCH}}</view>
+      </view>
+    </view>
+    <view class='bottom_view'>
+      <view class='day_view'>
+        <view class='white_num_view'>
+          <text class='white_num'>{{day}}</text>
+        </view>
+        <view class='black_num_view'>
+          <text class='black_num'>{{day}}</text>
+        </view>
+      </view>
+      <view class='year_view'>
+        <view class='year_text'>{{year}}-{{mon}}</view>
+        <!-- <text class=''>2019JAN</text> -->
+        <view class='week_text'>{{week}}</view>
+      </view>
+      <image class='wx_qrcode_image' src='../../images/mine/wxqrcode.jpg'></image>
+    </view>
+  </image>
+<!-- open-type='openSetting' -->
+  <view class='bottom_down_share_view'>
+  <!-- <button class='btn1' bindtap='saveTimeLineImage'>
+    <image class='btnImg' src='../../images/common/download_icon1.png'></image>
+    <view>下载</view>
+ </button> -->
+  <button class='btn1' open-type='share'>
+    <image class='btnImg' src='../../images/common/share_icon.png'></image>
+    <view>分享</view>
+ </button>
+  </view>
+
+
+<view hidden="{{maskHidden}}" class="mask"></view> 
+<view class='canvas-box'>
+<canvas style="width: 217px;height: 342px;background:red;position: fixed;top: -10000px;" canvas-id="shareFriends"></canvas>
+  <image src='{{imagePath}}'></image>  
+</view>
+
+
+</view>
