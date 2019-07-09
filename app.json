@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/mine/mine",
     "pages/addBucket/addBucket",
@@ -16,10 +16,11 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#6C5AFB",
     "navigationBarTitleText": "愿望小清单",
-    "navigationBarTextStyle":"white"
-  }
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
 }
